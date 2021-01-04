@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/check_btn"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/circle_uncheked">
+
+    </ImageButton>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/edit_todo_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            >
+
+        </EditText>
+        <TextView
+            android:id="@+id/textview_todo_item"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text="to-do"
+            android:fontFamily="casual"
+            android:textSize="10pt"
+            android:layout_gravity="center_vertical"
+
+            >
+
+        </TextView>
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/edit_btn"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pencil">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/delete_btn"
+        android:layout_width="45dp"
+        android:layout_height="34dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/delete">
+
+    </ImageButton>
+
+</LinearLayout>
